@@ -11,6 +11,7 @@ end = "2021-12-31"
 
 st.title('Stock Trend Prediction')
 
+user_input = "GOOGL"
 user_input = st.text_input('Enter Stock Ticker')
 df = yf.download(user_input, start, end)
 
